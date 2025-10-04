@@ -1,4 +1,8 @@
 # GEDLabAssignment2
+Jacob Coleman
+100829087
+
+Gameplay: Get to the top of the screen using WASD without getting hit by a car
 
 Diagram: https://www.figma.com/board/wTazlORf7u5c4vqpH6dYXk/Untitled?node-id=3-79&t=2VoZxE92seg6t7pE-0
 
