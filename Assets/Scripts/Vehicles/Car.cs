@@ -11,8 +11,5 @@ public class Car : Vehicle
     {
         transform.Rotate(0, 270, 0);
     }
-    public void Update()
-    {
-        drive();
-    }
+
 }

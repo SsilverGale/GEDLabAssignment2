@@ -1,16 +1,14 @@
 using UnityEngine;
+ using UnityEngine.SceneManagement;
 
 public class SceneManger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void ReloadScene()
     {
-        
+        SceneManager.LoadScene("cars");
     }
-
-    // Update is called once per frame
-    void Update()
+    public void CloseGame()
     {
-        
+        Application.Quit();
     }
 }
