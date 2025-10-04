@@ -1,16 +1,12 @@
 using UnityEngine;
 
-public class TruckSpawner : MonoBehaviour
+public class TruckSpawner : Spawner
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject TruckPrefab;
 
-    // Update is called once per frame
-    void Update()
+    public override Spawner SpawnVehicle()
     {
-        
+        GameObject carSpawn = Instantiate(TruckPrefab, transform.position, Quaternion.identity);
+        return carSpawn.GetComponent<Spawner>();
     }
 }

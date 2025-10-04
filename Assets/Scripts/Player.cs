@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [SerializeField] GameObject WinUI;
+    [SerializeField] Text WinText;
+    private bool isAlive =true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,15 +17,31 @@ public class Player : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("You Win");
-        WinUI.SetActive(true);
+        if (collision.gameObject.CompareTag("win"))
+        {
+            WinText.text = "You Win!";
+            Debug.Log("You Win");
+            WinUI.SetActive(true);
+        }
+        else if (collision.gameObject.CompareTag("vehicle"))
+        {
+            WinText.text = "You Lose!";
+            Debug.Log("You Lost");
+            WinUI.SetActive(true);
+            isAlive = false;
+        }
+
     }
 
     public void Inputs(InputAction.CallbackContext context)
     {
-        Vector2 moveDirection = context.ReadValue<Vector2>();
-        transform.position += new Vector3(moveDirection.x, 0, moveDirection.y);
+        if (isAlive)
+        {
+            Vector2 moveDirection = context.ReadValue<Vector2>();
+            transform.position += new Vector3(moveDirection.x, 0, moveDirection.y);
+        }
+
     }
 }

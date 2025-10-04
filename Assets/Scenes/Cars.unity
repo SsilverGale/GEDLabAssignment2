@@ -689,7 +689,7 @@ Transform:
   m_GameObject: {fileID: 579570135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.8, y: 1, z: -11.14155}
+  m_LocalPosition: {x: -40, y: 1, z: -11.14155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -831,6 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   WinUI: {fileID: 609151723}
+  WinText: {fileID: 0}
 --- !u!136 &580631151
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1173,7 +1174,7 @@ Transform:
   m_GameObject: {fileID: 1373796384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.8, y: 1, z: 4.2}
+  m_LocalPosition: {x: -40, y: 1, z: 4.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1193,7 +1194,7 @@ GameObject:
   - component: {fileID: 1441269370}
   m_Layer: 0
   m_Name: WinBox
-  m_TagString: Untagged
+  m_TagString: win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
