@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   WinUI: {fileID: 609151723}
-  WinText: {fileID: 0}
+  WinText: {fileID: 609151725}
 --- !u!136 &580631151
 CapsuleCollider:
   m_ObjectHideFlags: 0
